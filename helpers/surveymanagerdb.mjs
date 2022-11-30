@@ -1,9 +1,6 @@
 import mongoose from 'mongoose';
 
 import { Surveys } from '../models/survey.mjs';
-import * as dotenv from 'dotenv';
-
-dotenv.config();
 
 class SurveyManagerDB {
 
@@ -11,7 +8,7 @@ class SurveyManagerDB {
     }
 
     async init() {
-        await mongoose.connect(process.env.DATABASE_URL);
+        await mongoose.connect('mongodb://localhost/tiny_surveys');
     }
 
     async disconnect(){
