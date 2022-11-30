@@ -1,4 +1,4 @@
-import { SurveyManager } from '../surveymanagerdb.mjs';
+import { SurveyManager } from '../helpers/surveymanagerdb.mjs';
 
 let newSurveyValues = {
   topic: "robspizza",
